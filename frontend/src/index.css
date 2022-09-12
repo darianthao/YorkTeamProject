@@ -1,0 +1,387 @@
+/* Main colors for file - syntax to use them: color: var(--blackColor); */
+:root {
+    --blackColor: #000000;
+    --blueColor: #172243;
+    --greyColor: #202020;
+    --whiteColor: #FFFFFF;
+    --yellowColor: #EEC85A;
+    --pinkColor: #BD3BCC;
+}
+
+body {
+    background-color: var(--blackColor);
+}
+
+/* Tables */
+.hideTopBorder {
+    border-top: hidden;
+}
+
+/* App.js */
+.App {
+    background: var(--greyColor);
+    font-family: 'Exo', sans-serif;
+    color: var(--whiteColor);
+}
+
+/*NavBar.js*/
+.navBar {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navImg {
+    max-height: 50px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 1); /* default 'a' channel is 0.75 */
+}
+
+.dropdown-menu-dark {
+    background-color: black;
+}
+
+#navWelcome {
+    color: var(--yellowColor);
+}
+
+#personIcon {
+    position: relative;
+    bottom: 2px;
+}
+
+#cartIcon {
+    position: relative;
+    bottom: 2px;
+}
+
+#cartCount {
+    position: relative;
+    bottom: 10px;
+    min-width: 27px;
+    --bs-bg-opacity: 0.9;
+    color: var(--greyColor);
+    font-size: 0.65rem; /* default is 0.75rem */
+    font-weight: 400; /* default is 700 */
+    padding: 0.35em 0.65em 0.25em; /* default is padding: 0.35em 0.65em; */
+}
+
+#cartCountEmpty {
+    position: relative;
+    bottom: 10px;
+    min-width: 27px;
+    --bs-bg-opacity: 1;
+    color: var(--blackColor);
+    font-size: 0.65rem; /* default is 0.75rem */
+    font-weight: 400; /* default is 700 */
+    padding: 0.35em 0.65em 0.25em; /* default is padding: 0.35em 0.65em; */
+}
+
+/* LandingPage.js */
+.shadyDealsLink {
+    background-color: var(--blackColor);
+}
+
+.landingPageCard {
+    width: 22rem;
+    margin: 5px;
+}
+
+.landingPageImg {
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.shadyBanner {
+    display: block;
+    margin: auto 0;
+    background: var(--blackColor);
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+.landingPageGrid {
+    width: 100%;
+   height: 100%;
+    object-fit: cover;
+
+}
+
+.overlayText {
+    position: absolute;
+    margin: 30px;
+}
+
+.overlayText a {
+    text-decoration: none;
+    color: white;
+}
+
+.first {
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+.second {
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+.third {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 992px) {
+    .first {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 8px;
+    }
+
+    .second {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 8px;
+    }
+
+    .third {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.cardBodyLP {
+    max-height: 15px !important;
+}
+
+/* Footer.js */
+#main-footer {}
+
+/* Products.js */
+.productCard a {
+    text-decoration: none;
+    color: white;
+}
+
+.productCard img {
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+    background: white;
+}
+
+.productsSalePrice {
+    font-weight: bold;
+    color: red;
+}
+
+.productOGPrice {
+    text-decoration-line: line-through;
+    font-size: 14px;
+}
+
+.productCartIcon, .productArrow {
+    position: relative;
+    bottom: 2px;
+}
+
+/* IndividualProductPage.js */
+.productCartBtn {
+    margin-top: 10px;
+    padding: 8px 60px;
+}
+
+.buyNowBtn {
+    margin-top: 10px;
+    padding: 8px 69px;
+}
+
+.continueLink {
+    text-decoration: none;
+    transition: ease-in-out 120ms;
+}
+
+.continueLink:hover {
+    text-decoration: underline;
+}
+
+.productDescription {
+    line-height: 32px;
+}
+
+/* ShadyDealsPage.js */
+.shadyImg {
+    width: 100%;
+}
+
+.indSalePrice {
+    color: red;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* CartPage.js */
+.cartPage {
+    color: var(--whiteColor);
+}
+
+.cartBtn {
+    padding: 8px 100px;
+}
+
+.cartSalePrice {
+    color: red;
+}
+
+.cartOGPrice {
+    text-decoration-line: line-through;
+}
+
+/* CartItems.js */
+.cartImg {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.qtyBtn, .removeBtn {
+    background: none;
+    border: none;
+    margin: 2px;
+    color: var(--whiteColor);
+}
+
+/* CheckOutPage.js */
+.paymentBtn a {
+    color: black;
+    text-decoration: none;
+}
+
+.paymentBtn {
+    margin-top: 18px;
+    width: 100% !important;
+}
+
+.applyBtn {
+    padding: 6px 30px;
+}
+
+
+.checkoutImg {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+
+/* ConfirmationPage */
+.confirmationDiv {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.confirmationBtn {
+    padding: 8px 50px;
+    margin: 5px;
+}
+
+
+/* LoginPage.js */
+.loginForm {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.loginBtn {
+    padding: 6px 40px;
+    width: 100%;
+}
+
+/* RegistrationPage.js */
+.regForm {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.regBtn {
+    padding: 6px 96px;
+}
+
+/* AboutPage */
+.main-about {
+    background-color: var(--greyColor);
+    box-sizing: unset;
+    min-width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.about-ss {
+    color: var(--yellowColor);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+
+.about-header {
+    padding-top: 20px;
+    margin: 20px;
+}
+
+.about-content {
+    margin: 80px 20px 0px 20px;
+}
+
+.accordionHeader {
+    background-color: var(--greyColor);
+}
+
+.accordion1 {
+    background-color: var(--greyColor);
+    color: white;
+}
+
+.accordion-button {
+    color: #00cfc1;
+    background-color: var(--blackColor);
+}
+
+.accordion-button:not(.collapsed) {
+    color: #f682dd;
+    background-color: var(--blackColor);
+}
+
+/*Contact Page*/
+.main-contact {
+    color: #00cfc1;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-ss {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    margin: 20px 0px 40px 0px;
+}
+
+.contact-cards {
+    justify-content: space-evenly;
+}
+
+.contact-card {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-color: var(--blueColor);
+    border-style: solid;
+}
+
